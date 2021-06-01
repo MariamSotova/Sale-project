@@ -1,0 +1,168 @@
+//----------------------------------------
+//   Variables
+//----------------------------------------
+
+// 1  - Color
+// 2  - Font
+// 3  - flex and wrapper
+// 4  - Radius
+// 5  - Forms
+// 6  - Spacing
+// 7  - Breakpoints
+// 8  - MediaQueries
+// 9  - Transitions
+// 10 - Inputs
+
+//
+// 1 - Color
+// ---------------------------------------
+
+$clr-text: #000000;
+$clr-body: #ffffff;
+$clr-link: #e32e30;
+$clr-page: #fdc423;
+$clr-questions: #fff5db;
+
+//
+// 2 - Font
+// ---------------------------------------
+
+$font-base: -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+$font-size-base: 16px;
+
+$font-size-h-mobile: 12px;
+$font-size-h-bottom: 18px;
+$font-size-h-button: 20px;
+$font-size-h-text: 24px;
+$font-size-h-sup: 30px;
+$font-size-h-product: 36px;
+$font-size-s-header: 40px;
+$font-size-h-sale: 55px;
+$font-size-f-header: 60px;
+$font-size-h-logo: 90px;
+$font-size-h-percent: 114px;
+
+$font-weight-bold: 700;
+$font-weight-Semi: 600;
+$font-weight-base: 400;
+
+$line-height-base: 27px;
+
+$line-height-h-mobile: 18px;
+$line-height-h-text: 19px;
+$line-height-b-text: 21px;
+$line-height-h-share: 24px;
+$line-height-f-text: 28px;
+$line-height-s-wrp: 29px;
+$line-height-f-link: 33px;
+$line-height-q-number: 36px;
+$line-height-count: 46px;
+$line-height-questions: 50px;
+$line-height-h-product: 54px;
+$line-height-facts: 60px;
+$line-height-h-logo: 90px;
+
+//
+// 3 - flex and wrapper
+// ---------------------------------------
+
+$min-width: 320px;
+$mobile-width-only: 767px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+//
+// 4 - Radius
+// ---------------------------------------
+
+$brd-radius-btn: 10px;
+$brd-time: 4px solid #e32e30;
+$brd-radius-time: 50%;
+
+//
+// 5 - Buttons
+// ---------------------------------------
+
+// $button-base-height: 4rem;
+// $button-S-height: 3rem;
+
+//
+// 5 - Forms
+// ---------------------------------------
+
+// exemple
+// $form-group-input-height: 4rem;
+//
+// $form-list-input: _assign(
+//   (
+//     '[type="text"]',
+//     '[type="password"]',
+//     '[type="tel"]',
+//     '[type="url"]',
+//     '[type="email"]',
+//     '[type="search"]',
+//     '[type="date"]',
+//     '[type="month"]',
+//     '[type="number"]'
+//   )
+// );
+
+//
+// 6 - Spacing
+// ---------------------------------------
+
+// $spacer-N: 0;
+// $spacer-S: 1rem;
+// $spacer-M: 2rem;
+// $spacer-L: 4rem;
+// $spacer-XL: 8rem;
+
+//
+// 7 - Breakpoints
+// ---------------------------------------
+
+// $mq-S: em(480, $em-base);
+// $mq-S-up: em(481, $em-base);
+// $mq-M: em(768, $em-base);
+// $mq-M-up: em(769, $em-base);
+// $mq-L: em(1024, $em-base);
+// $mq-L-up: em(1025, $em-base);
+
+
+//  8 - MediaQueries
+// ---------------------------------------
+
+// $mobile: (
+//   max-width: 767px,
+// );
+// $mobileMin: (
+//   min-width: 320px,
+// );
+// $tablet: (
+//   max-width: 1199px,
+// );
+// $tabletMin: (
+//   min-width: 768px,
+// );
+// $desktop: (
+//   max-width: 1920px,
+// );
+// $desktopMin: (
+//   min-width: 1200px,
+// );
+
+//
+// 9 - Transitions
+// ---------------------------------------
+
+// $trans-timing: 0.3s;
+// $trans-cubic: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+// $trans-all: all $trans-timing $trans-cubic;
+
+//
+// 10 - inputs
+// ---------------------------------------
+
+// $radioCheckboxSize: 1.6rem;
+// $radioCheckboxTop: 0.2rem;

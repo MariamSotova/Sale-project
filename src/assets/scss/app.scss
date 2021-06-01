@@ -1,0 +1,40 @@
+@charset 'UTF-8';
+
+@import "settings";
+
+// =======================================
+// Base
+// =======================================
+
+@import "base/b_body";
+@import "base/b_font_face";
+@import "base/b_normalize";
+
+// =======================================
+// header
+// =======================================
+
+@import "header/h_header";
+@import "header/h_wrp-balloon";
+@import "header/h_wrp";
+
+// =======================================
+// main-section
+// =======================================
+
+@import "main-section/m_main";
+@import "main-section/s_box";
+@import "main-section/s_count";
+@import "main-section/s_facts";
+@import "main-section/s_questions";
+@import "main-section/s_section";
+
+// =======================================
+// footer
+// =======================================
+
+@import "footer/f_footer";
+@import "footer/f_middle";
+@import "footer/f_social";
+@import "footer/f_top";
+@import "footer/f_wrp";

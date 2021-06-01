@@ -1,0 +1,231 @@
+.wrp__image {
+   opacity: 0;
+   transform: scale(0);
+   transition: all 1s ease-in-out;
+}
+
+.wrp__image._active {
+   transform: scale(1);
+   opacity: 1;
+}
+
+
+// .wrp__image:only-of-type
+// если я хочу чтобы плавно снизу вверх появлялся скролл,а не от точки,то ниже код
+
+// .wrp__image {
+//    transform: translate(0px, 120%);
+//    opacity: 0;
+//    transition: all 0.8s ease 0s;
+// }
+
+// .wrp__image._active {
+//   transform: translate(0px, 0px);
+//   opacity: 1;
+// }
+
+.section__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__box {
+  .box__button-link {
+    display: flex;
+    justify-content: center;
+    width: 280px;
+  }
+
+    .button__link {
+      position: relative;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 700;
+      width: 100%;
+      margin-top: 50px;
+      padding: 20px 80px 20px 30px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #e32e30;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+
+      &::after {
+        position: absolute;
+        content: url(svg/vlink.svg);
+        right: 38px;
+        top: 23px;
+      }
+    }
+}
+
+.box__details {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 20px;
+}
+
+.box__header-box {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 20px;
+  line-height: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.header-box__link {
+  position: relative;
+  color: #000000;
+  text-decoration: none;
+}
+
+.header-box__link::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: #000000;
+}
+
+.box__text {
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+  font-weight: 400;
+  color: #000000;
+}
+
+@media(max-width: 767px) {
+.box__wrp {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.wrp__contain {
+  display: flex;
+}
+
+.wrp__image {
+  width: 50%;
+  .image-box1 {
+    width: 78%;
+  }
+}
+
+.wrp__image:nth-of-type(3),
+.bg-heart {
+  display: none;
+}
+
+}
+
+// tablet
+
+@media(min-width: 768px) and (max-width: 1199px) {
+  .wrapper-box {
+    background: url(svg/bgheart.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 160px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+  }
+
+  .box__wrp {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 170px;
+
+  }
+
+  .wrp__contain {
+    display: flex;
+  }
+
+.wrp__contain:first-of-type {
+  width: 50%;
+}
+
+.wrp__contain:last-of-type {
+  width: 90%;
+}
+
+.wrp__image {
+  width: 100%;
+  margin-right: 30px;
+}
+
+.box__details {
+  padding: 0 20px;
+}
+
+.box__button-link {
+  margin-top: 30px;
+}
+
+.section__box {
+  .button__link {
+    margin: 0;
+  }
+}
+}
+
+@media(min-width: 1200px) {
+  .section__box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+    background: url(svg/backheart.svg);
+    background-repeat: no-repeat;
+    background-size: 1118px;
+    margin: 70px 0 100px;
+    padding-bottom: 160px;
+  }
+
+  .wrapper-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 200px 20px 0;
+  }
+
+  .box__wrp,
+  .wrp__contain {
+    display: flex;
+  }
+
+  .wrp__image{
+    margin-right: 50px;
+  }
+
+  .section__box {
+    .box__details {
+      width: 40%;
+       .box__header-box {
+         font-size: 24px;
+       }
+    }
+  }
+
+}
+

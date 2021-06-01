@@ -1,0 +1,152 @@
+@media(max-width: 767px) {
+
+.section__count {
+   background-color: #fdc423;
+   margin: 0 0 50px;
+   display: flex;
+   flex-direction: column;
+ }
+
+.countdown-title {
+  max-width: 700px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+
+.countdown {
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  text-align: center;
+  font-size: 20px;
+  padding: 0 0 60px;
+}
+
+.countdown-number {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.countdown-time {
+  padding: 0;
+  display: inline-block;
+}
+
+.countdown-text {
+  display: block;
+  font-size: 10px;
+}
+}
+
+@media(min-width: 768px) {
+  // and (max-width: 1199px)
+
+  .section__count {
+     background-color: #fdc423;
+     margin: 0 0 50px;
+     display: flex;
+     flex-direction: column;
+   }
+
+  .countdown-title {
+    max-width: 700px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 40px;
+  }
+
+  .countdown {
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    text-align: center;
+    font-size: 30px;
+    padding: 0 0 60px;
+  }
+
+  .countdown-number {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+  }
+
+  .countdown-time {
+    padding: 20px 15px 5px;
+    display: inline-block;
+  }
+
+  .countdown-text {
+    display: block;
+    font-size: 16px;
+  }
+  }
+
+.base-timer {
+position: relative;
+width: 300px;
+height: 300px;
+}
+
+.base-timer__svg {
+transform: scaleX(-1);
+}
+
+.base-timer__circle {
+fill: none;
+stroke: none;
+}
+
+.base-timer__path-elapsed {
+stroke-width: 7px;
+stroke: grey;
+}
+
+.base-timer__path-remaining {
+stroke-width: 7px;
+stroke-linecap: round;
+transform: rotate(90deg);
+transform-origin: center;
+transition: 1s linear all;
+fill-rule: nonzero;
+stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+color: orange;
+}
+
+.base-timer__path-remaining.red {
+color: red;
+}
+
+.base-timer__label {
+position: absolute;
+width: 300px;
+height: 300px;
+top: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 48px;
+}

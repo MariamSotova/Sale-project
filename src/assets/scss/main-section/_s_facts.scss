@@ -1,0 +1,261 @@
+.wrp__bg-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.background__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.facts__link {
+  font-size: 16px;
+  color: #e32e30;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.facts__text {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+}
+
+.facts__text--italic {
+  font-style: italic;
+}
+
+.advantages__wrp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: space-between;
+  margin: 20px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.advantages__span {
+  position: relative;
+  font-size: 30px;
+  margin-right: 126px;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+}
+
+.advantages__span::after {
+  position: absolute;
+  content: url(svg/advantages.svg);
+  left: 30px;
+  top: -10px;
+}
+
+.advantages__text {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-style: normal;
+  /* line-height: 29px; */
+  color: #000000;
+}
+
+.advantages__link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #e32e30;
+  font-weight: bold;
+}
+
+
+@media(max-width: 767px) {
+  .background__group {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    width: 240px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrp__bg-image {
+  position: relative;
+}
+  .background__team {
+    display: none;
+  }
+
+  .wrp__facts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrp__title {
+    order: 1;
+    margin: 50px 0 90px;
+    text-align: center;
+    .facts__header {
+      margin: 0;
+      padding: 0;
+      font-size: 24px;
+      font-weight: 700;
+      color: #000000;
+    }
+  }
+
+  .wrp__link {
+    order: 3;
+    margin: 35px 20px 20px;
+  }
+
+  .wrp__text {
+    order: 4;
+  }
+
+  .wrp__bg-image {
+    order: 2;
+  }
+
+  .facts__text {
+    margin: 0 20px;
+  }
+
+  .advantages__span::after {
+    position: absolute;
+    content: url(svg/line.svg);
+    left: 30px;
+    top: -10px;
+  }
+
+  .advantages__span {
+    margin-right: 50px;
+    // margin-top: 15px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 1199px) {
+  .background__group {
+    position: absolute;
+    z-index: 1;
+    right: -100px;
+    width: 340px;
+}
+.wrp__bg-image {
+  position: relative;
+}
+.background__team {
+  display: none;
+}
+    .wrp__title,
+    .wrp__text {
+      margin: 0 50px;
+    }
+
+    .facts__header {
+      margin: 0;
+      margin-top: 80px;
+      font-size: 60px;
+    }
+
+    .wrp__link {
+      margin: 30px 50px;
+    }
+
+    .facts__text--italic {
+      margin: 20px 0 50px;
+    }
+
+    .advantages__wrp {
+      justify-content: center;
+    }
+
+    .advantages__item:nth-child(1) {
+      margin-top: 30px;
+    }
+}
+
+@media(min-width: 1200px) {
+  .wrp__bg-image {
+    position: relative;
+    }
+
+  .background__group {
+    position: absolute;
+    z-index: 1;
+    width: 500px;
+    left: 50%;
+  }
+
+  .background__team {
+    display: none;
+  }
+
+  .wrp__title,
+    .wrp__text {
+      margin: 0 50px;
+    }
+
+    .facts__header {
+      position: relative;
+      margin: 0;
+      margin-top: 80px;
+      font-size: 60px;
+    }
+
+    .wrp__link {
+      margin: 30px 50px;
+    }
+
+    .facts__text--italic {
+      margin: 20px 0 50px;
+    }
+
+    .advantages__text {
+      padding-right: 50px;
+    }
+    .advantages__wrp {
+      height: 200px;
+      margin-left: 15%;
+    }
+
+    .advantages__list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .facts__header::before {
+      position: absolute;
+      content: url(svg/vtopblack.svg);
+      top: -35px;
+      left: -35px;
+}
+
+.facts__header::after {
+  position: absolute;
+  content: url(svg/vbottomblack.svg);
+  bottom: -35px;
+}
+
+}

@@ -1,0 +1,205 @@
+/* убрать все ширины для медиязапросов*/
+.section__header {
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+  color: #000000;
+}
+
+.section__link {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+}
+
+// mobile
+
+@media(max-width: 767px) {
+  .section {
+    margin: 50px 0;
+  }
+
+  .section__header {
+    font-size: 22px; //32 t 40 d
+    margin-bottom: 87px;
+  }
+
+  .section__wrp {
+    display: flex;
+	  flex-direction: column;
+	  flex-wrap: wrap;
+    align-items: center;
+    margin-left: 100px;
+  }
+
+  .step__wrp {
+    width: 186px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 25px;
+    color: #000000;
+  }
+
+  .step__text {
+    margin: 0;
+    margin-bottom: 96px;
+}
+
+  .step__text--one,
+  .step__text--two,
+  .step__text--three {
+    position: relative;
+  }
+
+  .step__text--one::before {
+    position: absolute;
+    content: url(svg/step1mobile.svg);
+    top: -40px;
+    left: -95px;
+  }
+
+  .step__text--two::before {
+    position: absolute;
+    content: url(svg/step2mobile.svg);
+    top: -40px;
+    left: -95px;
+  }
+
+  .step__text--three::before {
+    position: absolute;
+    content: url(svg/step3mobile.svg);
+    top: -40px;
+    left: -95px;
+  }
+
+}
+
+// tablet
+
+@media(min-width: 768px) and (max-width: 1199px) {
+  .section {
+    margin: 80px 0 50px auto;
+  }
+
+  .section__header {
+    font-size: 32px;
+    margin-bottom: 110px;
+  }
+
+  .section__wrp {
+    display: flex;
+	  flex-direction: column;
+	  flex-wrap: wrap;
+    align-items: center;
+    // margin-bottom: 50px;
+  }
+
+  .step__wrp {
+    width: 186px;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 29px;
+    color: #000000;
+  }
+
+  .step__text {
+    margin: 0;
+    margin-bottom: 140px;
+  }
+
+ .step__text--three {
+  margin-bottom: 67px;
+  }
+
+  .step__text--one,
+  .step__text--two,
+  .step__text--three {
+    position: relative;
+  }
+
+  .step__text--one::before {
+    position: absolute;
+    content: url(svg/step1.svg);
+    top: -57px;
+    left: -123px;
+  }
+
+  .step__text--two::before {
+    position: absolute;
+    content: url(svg/step2.svg);
+    top: -57px;
+    left: -123px;
+  }
+
+  .step__text--three::before {
+    position: absolute;
+    content: url(svg/step3.svg);
+    top: -57px;
+    left: -123px;
+  }
+}
+
+// desktop
+
+@media(min-width: 1200px) and (max-width: 1920px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0 70px;
+  }
+
+
+  .section__wrp {
+    display: flex;
+    justify-content: center;
+    margin: 112px 80px;
+  }
+
+  .step__wrp {
+    display: flex;
+    justify-content: flex-end;
+    width: 360px;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 29px;
+    color: #000000;
+  }
+
+  .step__text {
+    width: 238px;
+    margin: 0;
+  }
+
+.step__text--one,
+.step__text--two,
+.step__text--three {
+  position: relative;
+}
+
+.step__text--one::before {
+  position: absolute;
+  content: url(svg/step1.svg);
+  top: 0;
+  top: -57px;
+  left: -123px;
+}
+
+.step__text--two::before {
+  position: absolute;
+  content: url(svg/step2.svg);
+  top: 0;
+  top: -57px;
+  left: -123px;
+}
+
+.step__text--three::before {
+  position: absolute;
+  content: url(svg/step3.svg);
+  top: 0;
+  top: -57px;
+  left: -123px;
+}
+
+}

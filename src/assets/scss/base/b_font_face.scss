@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  url('assets/ProximaNova-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('assets/ProximaNova-Regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+@font-face {
+  font-family: 'Proxima Nova Semibold';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+  url('assets/ProximaNova-Semibold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('assets/ProximaNova-Semibold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  font-style: bold;
+  font-weight: 700;
+  src: local(''),
+  url('assets/ProximaNova-Bold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('assets/ProximaNova-Bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+

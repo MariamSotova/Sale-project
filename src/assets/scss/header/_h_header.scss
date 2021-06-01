@@ -1,0 +1,73 @@
+.header {
+  background-color: $clr-page;
+  padding-bottom: 30px;
+}
+
+@media(max-width: 768px) {
+.header {
+  background-image: url(svg/cloudmobile.svg);
+  background-repeat: no-repeat;
+
+  animation-name: cloud;
+  animation-duration: 200s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cloud {
+  0%   { background-position-x: 0px;
+    background-position-y: bottom; }
+  50%  { background-position-x: -1000px;
+    background-position-y: bottom; }
+  100% { background-position-x: 0px;
+    background-position-y: bottom; }
+}
+
+}
+
+@media(min-width: 768px) and (max-width: 1199px) {
+  header {
+    .container {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: nowrap;
+       justify-content: center;
+       align-items: stretch;
+       align-content: stretch;
+       margin: 0 30px;
+     }
+
+  }
+
+  .header {
+    background-image: url(svg/cloudtablet.svg);
+    background-repeat: no-repeat;
+
+    animation-name: cloud;
+    animation-duration: 200s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes cloud {
+    0%   { background-position-x: 0px;
+      background-position-y: bottom; }
+    50%  { background-position-x: -1000px;
+      background-position-y: bottom; }
+    100% { background-position-x: 0px;
+      background-position-y: bottom; }
+  }
+
+}
+
+@media(min-width: 1200px) {
+  header {
+    background: url(svg/rectangle.svg) 50% no-repeat,
+    url(svg/balloon.svg) 90% no-repeat,
+    url(svg/cloudtablet.svg) 100% repeat;
+  }
+}
+// url вставляет фото назад
+

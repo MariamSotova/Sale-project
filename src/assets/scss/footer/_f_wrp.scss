@@ -1,0 +1,21 @@
+.footer__wrp {
+  display: flex;
+  flex-direction: column;
+  background-color: #fdc423;
+  padding: 50px 0;
+}
+
+.footer__social {
+  text-align: center;
+  margin: 5px 20px;
+}
+
+.footer__text {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  /* line-height: 60px; */
+  color: #000000;
+}
