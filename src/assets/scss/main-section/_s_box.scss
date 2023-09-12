@@ -1,28 +1,13 @@
 .wrp__image {
-   opacity: 0;
-   transform: scale(0);
-   transition: all 1s ease-in-out;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 1s ease-in-out;
 }
 
 .wrp__image._active {
-   transform: scale(1);
-   opacity: 1;
+  transform: scale(1);
+  opacity: 1;
 }
-
-
-// .wrp__image:only-of-type
-// если я хочу чтобы плавно снизу вверх появлялся скролл,а не от точки,то ниже код
-
-// .wrp__image {
-//    transform: translate(0px, 120%);
-//    opacity: 0;
-//    transition: all 0.8s ease 0s;
-// }
-
-// .wrp__image._active {
-//   transform: translate(0px, 0px);
-//   opacity: 1;
-// }
 
 .section__box {
   display: flex;
@@ -43,27 +28,27 @@
     width: 280px;
   }
 
-    .button__link {
-      position: relative;
-      font-size: 16px;
-      line-height: 24px;
-      font-weight: 700;
-      width: 100%;
-      margin-top: 50px;
-      padding: 20px 80px 20px 30px;
-      border-radius: 10px;
-      text-decoration: none;
-      color: #ffffff;
-      background-color: #e32e30;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  .button__link {
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 50px;
+    padding: 20px 80px 20px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #e32e30;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 
-      &::after {
-        position: absolute;
-        content: url(svg/vlink.svg);
-        right: 38px;
-        top: 23px;
-      }
+    &::after {
+      position: absolute;
+      content: url(svg/vlink.svg);
+      right: 38px;
+      top: 23px;
     }
+  }
 }
 
 .box__details {
@@ -107,42 +92,41 @@
   color: #000000;
 }
 
-@media(max-width: 767px) {
-.box__wrp {
-  display: flex;
-  flex-direction: column;
-  margin: 0 20px;
-}
-
-.wrp__contain {
-  display: flex;
-}
-
-.wrp__image {
-  width: 50%;
-  .image-box1 {
-    width: 78%;
+@media (max-width: 767px) {
+  .box__wrp {
+    display: none;
   }
-}
 
-.wrp__image:nth-of-type(3),
-.bg-heart {
-  display: none;
-}
+  .wrp__contain {
+    display: flex;
+    padding: 10px;
+  }
 
+  .wrp__image {
+    width: 50%;
+    .image-box1 {
+      width: 78%;
+    }
+  }
+
+  .wrp__image:nth-of-type(3),
+  .bg-heart {
+    display: none;
+  }
+
+  .section__box .button__link {
+    margin-top: 0;
+  }
 }
 
 // tablet
 
-@media(min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .wrapper-box {
     background: url(svg/bgheart.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     padding-bottom: 160px;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
   }
 
   .box__wrp {
@@ -152,42 +136,42 @@
     justify-content: center;
     align-items: center;
     margin-top: 170px;
-
   }
 
   .wrp__contain {
     display: flex;
+    padding: 10px;
   }
 
-.wrp__contain:first-of-type {
-  width: 50%;
-}
+  .wrp__contain:first-of-type {
+    width: 50%;
+  }
 
-.wrp__contain:last-of-type {
-  width: 90%;
-}
+  .wrp__contain:last-of-type {
+    width: 90%;
+  }
 
-.wrp__image {
-  width: 100%;
-  margin-right: 30px;
-}
+  .wrp__image {
+    width: 100%;
+    margin-right: 30px;
+  }
 
-.box__details {
-  padding: 0 20px;
-}
+  .box__details {
+    padding: 0 20px;
+  }
 
-.box__button-link {
-  margin-top: 30px;
-}
+  .box__button-link {
+    margin-top: 30px;
+  }
 
-.section__box {
-  .button__link {
-    margin: 0;
+  .section__box {
+    .button__link {
+      margin: 0;
+    }
   }
 }
-}
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .section__box {
     display: flex;
     flex-direction: column;
@@ -198,7 +182,6 @@
     background: url(svg/backheart.svg);
     background-repeat: no-repeat;
     background-size: 1118px;
-    margin: 70px 0 100px;
     padding-bottom: 160px;
   }
 
@@ -214,18 +197,16 @@
     display: flex;
   }
 
-  .wrp__image{
+  .wrp__image {
     margin-right: 50px;
   }
 
   .section__box {
     .box__details {
       width: 40%;
-       .box__header-box {
-         font-size: 24px;
-       }
+      .box__header-box {
+        font-size: 24px;
+      }
     }
   }
-
 }
-
