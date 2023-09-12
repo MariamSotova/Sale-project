@@ -5,29 +5,29 @@ function getTimeRemaining(endtime) {
   var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
   var days = Math.floor(t / (1000 * 60 * 60 * 24));
   return {
-    'total': t,
-    'days': days,
-    'hours': hours,
-    'minutes': minutes,
-    'seconds': seconds
+    total: t,
+    days: days,
+    hours: hours,
+    minutes: minutes,
+    seconds: seconds,
   };
 }
 
 function initializeClock(id, endtime) {
   var clock = document.getElementById(id);
 
-  var daysSpan = clock.querySelector('.days');
-  var hoursSpan = clock.querySelector('.hours');
-  var minutesSpan = clock.querySelector('.minutes');
-  var secondsSpan = clock.querySelector('.seconds');
+  var daysSpan = clock.querySelector(".days");
+  var hoursSpan = clock.querySelector(".hours");
+  var minutesSpan = clock.querySelector(".minutes");
+  var secondsSpan = clock.querySelector(".seconds");
 
   function updateClock() {
     var t = getTimeRemaining(endtime);
 
     daysSpan.innerHTML = t.days;
-    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+    hoursSpan.innerHTML = ("0" + t.hours).slice(-2);
+    minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ("0" + t.seconds).slice(-2);
 
     if (t.total <= 0) {
       clearInterval(timeinterval);
@@ -39,7 +39,7 @@ function initializeClock(id, endtime) {
 }
 
 var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000); // for endless timer
-initializeClock('countdown', deadline);
+initializeClock("countdown", deadline);
 
 // Указываем дату окончания работы таймера:
 // Формат вывода даты ISO 8601:
@@ -59,7 +59,7 @@ initializeClock('countdown', deadline);
 
 // Credit: Mateusz Rybczonec
 
-// _____________внизу код круга секунды_____________________________________
+// Below is the code for the circle of seconds
 
 const FULL_DASH_ARRAY = 283;
 const WARNING_THRESHOLD = 10;
@@ -67,16 +67,16 @@ const ALERT_THRESHOLD = 5;
 
 const COLOR_CODES = {
   info: {
-    color: "green"
+    color: "green",
   },
   warning: {
     color: "orange",
-    threshold: WARNING_THRESHOLD
+    threshold: WARNING_THRESHOLD,
   },
   alert: {
     color: "red",
-    threshold: ALERT_THRESHOLD
-  }
+    threshold: ALERT_THRESHOLD,
+  },
 };
 
 const TIME_LIMIT = 60;
@@ -119,9 +119,8 @@ function startTimer() {
   timerInterval = setInterval(() => {
     timePassed = timePassed += 1;
     timeLeft = TIME_LIMIT - timePassed;
-    document.getElementById("base-timer-label").innerHTML = formatTime(
-      timeLeft
-    );
+    document.getElementById("base-timer-label").innerHTML =
+      formatTime(timeLeft);
     setCircleDasharray();
     setRemainingPathColor(timeLeft);
 
@@ -175,28 +174,27 @@ function setCircleDasharray() {
     .setAttribute("stroke-dasharray", circleDasharray);
 }
 
-// ________________________ниже код  раскрывающегося меню____________________
+// below is the code for the drop-down menu
 
-const questions = document.getElementsByClassName('question');
+const questions = document.getElementsByClassName("question");
 for (let i = 0; i < questions.length; i++) {
   const question = questions[i];
-  question.addEventListener('click', function() {
-    this.classList.toggle('active');
+  question.addEventListener("click", function () {
+    this.classList.toggle("active");
     const answer = this.nextElementSibling;
     if (answer.style.maxHeight) {
       answer.style.maxHeight = null;
     } else {
-      answer.style.maxHeight = answer.scrollHeight + 'px'
+      answer.style.maxHeight = answer.scrollHeight + "px";
     }
-  })
+  });
 }
 
-//______________________ниже код анимации подарков появление при скролле ________________________
-
-const animItems = document.querySelectorAll('._anim-items');
+// Below is the animation code for gifts appearing when scrolling
+const animItems = document.querySelectorAll("._anim-items");
 
 if (animItems.length > 0) {
-  window.addEventListener('scroll', animOnScroll);
+  window.addEventListener("scroll", animOnScroll);
   function animOnScroll() {
     for (let index = 0; index < animItems.length; index++) {
       const animItem = animItems[index];
@@ -209,19 +207,22 @@ if (animItems.length > 0) {
         animItemPoint = window.innerHeight - window.innerHeight / animStart;
       }
 
-      if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
-        animItem.classList.add('_active');
+      if (
+        pageYOffset > animItemOffset - animItemPoint &&
+        pageYOffset < animItemOffset + animItemHeight
+      ) {
+        animItem.classList.add("_active");
       } else {
-        animItem.classList.remove('_active');
+        animItem.classList.remove("_active");
       }
     }
   }
 
   function offset(el) {
     const rect = el.getBoundingClientRect(),
-     scrollleft = window.pageXOffset || document.documentElement.scrollleft,
-     scrolltop = window.pageYOffset || document.documentElement.scrolltop;
-    return { top: rect.top + scrolltop, left: rect.left + scrollleft }
+      scrollleft = window.pageXOffset || document.documentElement.scrollleft,
+      scrolltop = window.pageYOffset || document.documentElement.scrolltop;
+    return { top: rect.top + scrolltop, left: rect.left + scrollleft };
   }
 
   setTimeout(() => {
